@@ -46,7 +46,7 @@ foo(1, 2, 3, 4, 5, 6); // returns 21
 ```
 function foo(a, b, c) { return a + b + c; }
 let bar = [1, 2, 3];
-foo(...foo); // returns 6
+foo(...bar); // returns 6
 ```
 * destructuring assignments
 ```
