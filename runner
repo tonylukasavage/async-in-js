@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+'use strict';
+require('use-strict');
+
+let args = process.argv.slice(2),
+	method = args[0],
+	user = args[1] || 'tony',
+	pass = args[2] || 'password';
+
+if (!method) { throw new Error('must specify a method [ex. "./runner 3-async.js"]'); }
+
+let number, isCallback;
+try {
+	number = parseInt(method.charAt(0), 10);
+	isCallback = number <= 2;
+} catch (e) {
+	throw new Error(`invalid method: ${e.message}`);
+}
+
+function showResult(result) {
+	console.log(process.env.TEST ? JSON.stringify(result) :
+		require('util').inspect(result, { depth: null }));
+}
+
+if (isCallback) {
+	require(`./methods/${method}`).call(null, user, pass, function(err, result) {
+		if (err) { console.error(err.stack); }
+		showResult(result);
+	});
+} else {
+	require(`./methods/${method}`).call(null, user, pass)
+		.then((result) => showResult(result))
+		.catch((err) => { console.error(err.stack); });
+}
+

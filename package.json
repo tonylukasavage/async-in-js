@@ -1,0 +1,50 @@
+{
+  "name": "async-in-js",
+  "version": "1.0.0",
+  "description": "Code for Pittsburgh Javascript meetup on 2016-02-23",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonylukasavage/async-in-js.git"
+  },
+  "keywords": [
+    "async",
+    "co",
+    "promises",
+    "promise",
+    "callbacks",
+    "callback",
+    "await",
+    "es6",
+    "es7",
+    "generator",
+    "generators"
+  ],
+  "author": "Tony Lukasavage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tonylukasavage/async-in-js/issues"
+  },
+  "homepage": "https://github.com/tonylukasavage/async-in-js#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-env": "^0.4.4",
+    "grunt-eslint": "^18.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.4.5",
+    "should": "^8.2.2",
+    "sinon": "^1.17.3"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt": "^0.8.5",
+    "co": "^4.6.0",
+    "config": "^1.19.0",
+    "denodeify": "^1.2.1",
+    "use-strict": "^1.0.1"
+  }
+}

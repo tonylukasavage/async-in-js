@@ -1,0 +1,18 @@
+{
+	"user": {
+		"user": "tony",
+		"password": "$2a$10$uDx.bShe56yOKxk3EjTzVuKhzwZZzt3RAxWT3GI8kUp/GZn9epj4m",
+		"description": "epic"
+	},
+	"foo": [ 1, 2, 3, 4, 5 ],
+	"bar": [
+		{ "name": "Tom", "success": false },
+		{ "name": "Dick", "success": false },
+		{ "name": "Harry", "success": true }
+	],
+	"quux": [
+		[ "tuple1", 123 ],
+		[ "tuple2", 456 ],
+		[ "tuple3", 789 ]
+	]
+}
