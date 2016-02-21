@@ -20,7 +20,7 @@ module.exports = function main(grunt) {
 				'runner',
 				'**/*.js',
 				'!node_modules',
-				'!methods/5-async-await/*.js'
+				'!methods/5-async-await/*.js' // TODO: use babel-eslint
 			]
 		},
 		mochaTest: { src: ['test/test.js'] }
