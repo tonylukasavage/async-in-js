@@ -2,19 +2,6 @@
 
 Code for Pittsburgh Javascript meetup on February 23, 2016.
 
-## Requirements
-
-* node.js 4+
-* npm
-
-These demos were tested and run on Mac OSX. There's no OS-specific code, so Windows and Linux should work as well, but YMMV.
-
-## Running examples
-
-```
-npm install
-```
-
 ## Example: A Login Flow
 
 The following example "flow" is what all the Javascript in the [methods](methods) folders are implementing. To make this easy for everyone to run, the model operations and data retrieval are all mocked, either accepting callbacks as a final parameter, or returning a Promise if a callback is not provided.
@@ -28,6 +15,29 @@ The following example "flow" is what all the Javascript in the [methods](methods
 > 5. Return the user model
 >
 > Steps 1-4 are all asynchronous.
+
+## Requirements
+
+* node.js 4+
+* npm
+
+These demos were tested and run on Mac OSX. There's no OS-specific code, so Windows and Linux should work as well, but YMMV.
+
+## Running examples
+
+```
+npm install
+./runner 2-async.js
+```
+
+## Testing and contributing
+
+All preprocessing with babel and tests are run via grunt
+
+```
+npm install -g grunt-cli
+npm test
+```
 
 ## ES6/7
 
