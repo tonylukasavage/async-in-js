@@ -15,18 +15,23 @@ These demos were tested and run on Mac OSX. There's no OS-specific code, so Wind
 npm install
 ```
 
-## A Login Flow
+## Example: A Login Flow
 
-Given a username and password, upon successful login I expect to get back a user model populated with lots of data.
+The following example "flow" is what all the Javascript in the [methods](methods) folders are implementing. To make this easy for everyone to run, the model operations and data retrieval are all mocked, either accepting callbacks as a final parameter, or returning a Promise if a callback is not provided.
 
-1. Get user model
-2. Compare password
-3. Update the last login time
-4. Attach multiple datasets in parallel to user model
+> Given a username and password, allow a user to login and retrieve data.
+>
+> 1. Get user model
+> 2. Compare password to validate login
+> 3. Update the last login time upon success
+> 4. Attach multiple datasets in parallel to user model
+> 5. Return the user model
+>
+> Steps 1-4 are all asynchronous.
 
 ## ES6/7
 
-You'll notice LOTS of ES6 and ES7 (or whatever they're calling them today) code in these examples. It's important to note that these sample are all being tested against node.js 4+. So while that gives us [a lot of ES6 features](https://nodejs.org/en/docs/es6/), it is far from a complete list of the touted features in ES6. Here's a [complete list](https://kangax.github.io/compat-table/es6/) of what node.js and other JS engines do and do not support. In my opinion, the following are the most notable absences from the supported list for node.js, whose ES6 compatiblity is 100% contingent on what V8 supports, and they seems totally unwilling to deviate from this with polyfills:
+You'll notice LOTS of ES6 and ES7 (or whatever they're calling them today) code in these examples. It's important to note that these samples are all being tested against node.js 4+. So while that gives us [a lot of ES6 features](https://nodejs.org/en/docs/es6/), it is far from a complete list of the touted features in ES6. Here's a [complete list](https://kangax.github.io/compat-table/es6/) of what node.js and other JS engines do and do not support. In my opinion, the following are the most notable absences from the supported list for node.js, whose ES6 compatiblity is 100% contingent on what V8 supports, and they seems totally unwilling to deviate from this with polyfills:
 
 * ES6 modules
 ```

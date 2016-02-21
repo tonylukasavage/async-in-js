@@ -21,4 +21,4 @@ Execute the login flow using the developing EcmaScript standard `async` and `awa
 
 ## Notes
 
-* [babel-eslint](https://github.com/babel/babel-eslint)
+* [babel-eslint](https://github.com/babel/babel-eslint) for eslinting babel code
