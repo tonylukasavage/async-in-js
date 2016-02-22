@@ -34,11 +34,11 @@ npm install
 
 Valid example names:
 
-* 1-callbacks
-* 2-async.js
-* 3-promises
-* 4-co
-* 5-async-await
+* `1-callbacks`
+* `2-async.js`
+* `3-promises`
+* `4-co`
+* `5-async-await`
 
 ## Testing and contributing
 
