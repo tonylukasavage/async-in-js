@@ -10,6 +10,7 @@ Execute the login flow using the developing EcmaScript standard `async` and `awa
 * Let's you write async code very much like sync
 * Zero code nesting
 * No need for intermediate generator functions like `co` (all under the hood)
+* Works seamlessly with existing Promise APIs
 * It's just freaking sweet
 
 ## Cons
