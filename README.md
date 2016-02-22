@@ -1,6 +1,6 @@
 # Asynchronous Programming: State of the Union
 
-Code for Pittsburgh Javascript meetup on February 23, 2016.
+Code for Pittsburgh Javascript meetup on February 23, 2016. In the meetup we'll discuss the current state of asynchronous programming in Javascript, starting at callback hell and working all the way up to the not-yet-standard holy grail that is the async/await API.
 
 ## Example: A Login Flow
 
