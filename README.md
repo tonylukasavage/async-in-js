@@ -8,7 +8,7 @@ The following example "flow" is what all the Javascript in the [methods](methods
 
 > Given a username and password, allow a user to login and retrieve data.
 >
-> 1. Get user model
+> 1. Read a user model
 > 2. Compare password to validate login
 > 3. Update the last login time upon success
 > 4. Attach multiple datasets in parallel to user model
@@ -25,14 +25,24 @@ These demos were tested and run on Mac OSX. There's no OS-specific code, so Wind
 
 ## Running examples
 
+The following is how you would run the `2-async.js` example.
+
 ```
 npm install
 ./runner 2-async.js
 ```
 
+Valid example names:
+
+* 1-callbacks
+* 2-async.js
+* 3-promises
+* 4-co
+* 5-async-await
+
 ## Testing and contributing
 
-All preprocessing with babel and tests are run via grunt
+All preprocessing with babel and tests are run via `grunt`. This means if you make any changes to `5-async-await`, you'll need to run `grunt` to make sure it gets transpiled before attempting to run the example. Tests are run via [mocha](https://mochajs.org/) using [should](https://github.com/shouldjs/should.js) assertions.
 
 ```
 npm install -g grunt-cli
@@ -68,3 +78,18 @@ foo(...bar); // returns 6
 let [foo, bar] = [123, 456];
 // foo === 123, bar === 456
 ```
+
+## Links
+
+* [callback hell](http://callbackhell.com/) - what it is and how to avoid it
+* [async.js](https://github.com/caolan/async)
+* [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* [co](https://github.com/tj/co)
+* [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
+* [async/await functions](https://github.com/tc39/ecmascript-asyncawait)
+* [babel](http://babeljs.io/) - for transpiling `5-async-await` example
+* [babel-plugin-transform-async-to-generator](https://babeljs.io/docs/plugins/transform-async-to-generator/) - for transpiling `5-async-await` example
+* [node.js ES6 support](https://nodejs.org/en/docs/es6/)
+* [ES6 full compatibility chart](https://kangax.github.io/compat-table/es6/)
+* [mocha](https://mochajs.org/)
+* [should](https://github.com/shouldjs/should.js)

@@ -5,6 +5,7 @@ Execute the login flow using [Promises](https://developer.mozilla.org/en-US/docs
 ## Pros
 
 * Part of the ES6 spec
+* Available in most Javascript environments
 * Eliminates the need to structure APIs around an `err` object
 * Stepping stone to future asynchronous coding improvements
 * No worries about callback/variable shadowing
@@ -18,4 +19,4 @@ Execute the login flow using [Promises](https://developer.mozilla.org/en-US/docs
 
 ## Notes
 
-* Bluebird is more full-featured, faster than native V8 promises
+* [Bluebird](https://github.com/petkaantonov/bluebird) is more full-featured, faster than native V8 promises

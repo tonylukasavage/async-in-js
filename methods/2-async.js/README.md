@@ -4,15 +4,15 @@ Execute the login flow using [async.js](https://github.com/caolan/async), one of
 
 ## Pros
 
-* Eliminates callback hell, no more nesting
+* Eliminates callback hell, much less nesting
 * Very mature and powerful module
-* multiple means of controlling flow
+* multiple means of controlling flow (series, parallel, whilst, etc...)
 * Errors abort, pass through to final callback
 
 ## Cons
 
 * easy to forget callbacks
 * still nesting callbacks in some cases
-* Not a standard, there's no next step
+* Not a standard, so there's no next step
 * Tough to share variables across functions
 * waterfall can be confusing, particularly if you don't know APIs well

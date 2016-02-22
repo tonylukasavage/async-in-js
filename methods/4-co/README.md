@@ -15,6 +15,7 @@ Execute the login flow using [co](https://github.com/tj/co). This leverages not 
 * Uncaught errors go to the void of infinite troubleshooting. Remember to `catch()`.
 * Can't use fat arrow functions to maintain lexical scope
 * Non-returning Promises look kinda weird, yielding nothing
+* You _must_ wrap all `co` code in a generator function
 * Not standard
 
 ## Notes

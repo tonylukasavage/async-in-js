@@ -23,17 +23,26 @@ describe('[runner]', function() {
 
 	// run tests for each method
 	fs.readdirSync(path.resolve('./methods')).forEach(function(dir) {
+		describe(dir, function() {
 
-		it(`runs ${dir} with default params`, function(done) {
-			exec(`./runner "${dir}"` , function(err, stdout) {
-				should.not.exist(err);
-				let result = JSON.parse(stdout);
-				result.fields.should.have.properties(FIELDS);
-				result.fields.should.have.property('last_login');
-				return done();
+			it('runs with default params', function(done) {
+				exec(`./runner "${dir}"` , function(err, stdout) {
+					should.not.exist(err);
+					let result = JSON.parse(stdout);
+					result.fields.should.have.properties(FIELDS);
+					result.fields.should.have.property('last_login');
+					return done();
+				});
 			});
+
+			it('shows error on bad password', function(done) {
+				exec(`./runner "${dir}" badpass`, function(err, stdout, stderr) {
+					should.not.exist(err);
+					stderr.should.containEql('invalid user/pass');
+					return done();
+				});
+			});
+
 		});
-
 	});
-
 });
