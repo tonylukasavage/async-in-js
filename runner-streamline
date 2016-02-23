@@ -1,4 +1,4 @@
-#!/usr/bin/env _node
+#!/usr/bin/env _node --quiet
 
 'use strict';
 require('use-strict');
@@ -15,6 +15,6 @@ function showResult(result) {
 try {
 	showResult(require('./methods/3-streamline')(user, pass, _));
 } catch (err) {
-	console.log(err.stack);
+	console.error(err.stack);
 }
 

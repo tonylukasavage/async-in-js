@@ -9,7 +9,7 @@ module.exports = function main(grunt) {
 			},
 			dist: {
 				files: {
-					'methods/5-async-await/index.js': 'methods/5-async-await/index.src.js'
+					'methods/6-async-await/index.js': 'methods/6-async-await/index.src.js'
 				}
 			}
 		},
@@ -20,7 +20,7 @@ module.exports = function main(grunt) {
 				'runner',
 				'**/*.js',
 				'!node_modules',
-				'!methods/5-async-await/*.js' // TODO: use babel-eslint
+				'!methods/6-async-await/*.js' // TODO: use babel-eslint
 			]
 		},
 		mochaTest: { src: ['test/test.js'] }

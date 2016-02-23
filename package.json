@@ -47,6 +47,7 @@
     "co": "^4.6.0",
     "config": "^1.19.0",
     "denodeify": "^1.2.1",
+    "streamline-runtime": "^1.0.20",
     "use-strict": "^1.0.1"
   }
 }

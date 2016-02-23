@@ -1,4 +1,4 @@
-# async/await module
+# async/await API
 
 Execute the login flow using the developing EcmaScript standard `async` and `await` keywords. This is how **EVERYONE** will be writing asynchronous Javascript in a few years. And with a little preprocessing, you can have it **NOW** in most environments.
 
