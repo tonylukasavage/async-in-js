@@ -39,7 +39,7 @@ where `METHOD` can be any of the following:
 * `5-co`
 * `6-async-await`
 
-The `streamline` example needs its own runner and install, so you can run it like this:
+The `3-streamline` example needs its own runner and install, so you can run it like this:
 
 ```
 npm install -g streamline
