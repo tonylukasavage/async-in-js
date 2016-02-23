@@ -1,0 +1,20 @@
+#!/usr/bin/env _node
+
+'use strict';
+require('use-strict');
+
+let args = process.argv.slice(2),
+	user = 'tony',
+	pass = args[0] || 'password';
+
+function showResult(result) {
+	console.log(process.env.TEST ? JSON.stringify(result) :
+		require('util').inspect(result, { depth: null, colors: true }));
+}
+
+try {
+	showResult(require('./methods/3-streamline')(user, pass, _));
+} catch (err) {
+	console.log(err.stack);
+}
+

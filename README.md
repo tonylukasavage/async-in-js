@@ -87,6 +87,7 @@ let [foo, bar] = [123, 456];
 * [co](https://github.com/tj/co)
 * [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 * [async/await functions](https://github.com/tc39/ecmascript-asyncawait)
+* [streamline.js](https://github.com/Sage/streamlinejs)
 * [denodeify](https://www.npmjs.com/package/denodeify) - for wrapping callback-based async code and making it return Promises
 * [mz](https://www.npmjs.com/package/mz) - wrap node.js core APIs to return Promises
 * [babel](http://babeljs.io/) - for transpiling `5-async-await` example
@@ -95,4 +96,4 @@ let [foo, bar] = [123, 456];
 * [ES6 full compatibility chart](https://kangax.github.io/compat-table/es6/)
 * [mocha](https://mochajs.org/)
 * [should](https://github.com/shouldjs/should.js)
-* [streamline.js](https://github.com/Sage/streamlinejs)
+
