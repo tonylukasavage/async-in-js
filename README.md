@@ -25,20 +25,26 @@ These demos were tested and run on Mac OSX. There's no OS-specific code, so Wind
 
 ## Running examples
 
-The following is how you would run the `2-async.js` example.
+Assuming you've run an `npm install`, the following is how you would run the `2-async.js` example.
 
 ```
-npm install
-./runner 2-async.js
+./runner METHOD
 ```
 
-Valid example names:
+where `METHOD` can be any of the following:
 
 * `1-callbacks`
 * `2-async.js`
-* `3-promises`
-* `4-co`
-* `5-async-await`
+* `4-promises`
+* `5-co`
+* `6-async-await`
+
+The `streamline` example needs its own runner and install, so you can run it like this:
+
+```
+npm install -g streamline
+./runner-streamline
+```
 
 ## Testing and contributing
 
