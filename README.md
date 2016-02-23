@@ -35,6 +35,7 @@ where `METHOD` can be any of the following:
 
 * `1-callbacks`
 * `2-async.js`
+* `3-streamline`
 * `4-promises`
 * `5-co`
 * `6-async-await`
