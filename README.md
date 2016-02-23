@@ -95,3 +95,4 @@ let [foo, bar] = [123, 456];
 * [ES6 full compatibility chart](https://kangax.github.io/compat-table/es6/)
 * [mocha](https://mochajs.org/)
 * [should](https://github.com/shouldjs/should.js)
+* [streamline.js](https://github.com/Sage/streamlinejs)
