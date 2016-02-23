@@ -25,7 +25,7 @@ These demos were tested and run on Mac OSX. There's no OS-specific code, so Wind
 
 ## Running examples
 
-Assuming you've run an `npm install`, the following is how you would run the `2-async.js` example.
+Assuming you've run an `npm install`...
 
 ```
 ./runner METHOD
